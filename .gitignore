@@ -29,9 +29,6 @@ build/
 out/
 *.next
 
-# Tailwind CSS generated files
-*.css
-
 # Environment variables
 .env
 .env.local
