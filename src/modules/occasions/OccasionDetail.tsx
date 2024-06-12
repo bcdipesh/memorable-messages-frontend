@@ -156,7 +156,10 @@ export default function OccasionDetail() {
               <FormItem>
                 <FormLabel>Delivery Date</FormLabel>
                 <FormControl>
-                  <Input placeholder="YYYY-MM-DD" {...field} />
+                  <Input
+                    placeholder="YYYY-MM-DD"
+                    value={field.value as string}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -182,7 +185,11 @@ export default function OccasionDetail() {
               <FormItem>
                 <FormLabel>Created At</FormLabel>
                 <FormControl>
-                  <Input placeholder="Created At" {...field} disabled />
+                  <Input
+                    placeholder="Created At"
+                    value={field.value as string}
+                    disabled
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
